@@ -14,6 +14,9 @@ public class Account {
 
 
     public boolean checkNameToEmboss() {
+        if (name == null) {
+            return false;
+        }
 
 
         return name.length() >= 3 && name.length() <= 19 && name.contains(" ") & onlySingleSubstring(name, " ") && !name.startsWith(" ") && !name.endsWith(" ");

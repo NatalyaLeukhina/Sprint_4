@@ -38,7 +38,9 @@ public class AccountTest {
                 //13 знаков без пробелов
                 {"ТимотиШаламен", false},
                 //3 пробела
-                {"   ", false}
+                {"   ", false},
+                //проверка с null
+                {null, false}
 
                 };
     }
